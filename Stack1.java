@@ -20,9 +20,9 @@ void push(T X)
  {
  top=top+1;
  if(A.size()>top)
- A.set(top,x);
+ A.set(top,X);
  else
- A.add(x);
+ A.add(X);
  }
 }
 T top()
@@ -48,7 +48,7 @@ boolean empty()
 {
  return top==-1;
 }
-Public String toString()
+public String toString()
 {
  String Ans="";
  for(int i=0;i<top;i++)
@@ -63,10 +63,10 @@ public class Stack1
 {
  public static void main(String[] args)
  {
-  Stack<Ineteger>s1=new Stack<>(3);
-  s1.push(10));
-  s1.push(20));
-  s1.push(30));
+  Stack <Integer>s1=new Stack<>(3);
+  s1.push(10);
+  s1.push(20);
+  s1.push(30);
   System.out.println("s1 after pushing 10,20 and 30:\n"+s1);
   s1.pop();
   System.out.println("s1 after pop:\n"+s1);
@@ -77,7 +77,7 @@ public class Stack1
   System.out.println("s1 after pushing 3 elements:\n"+s2);
   System.out.println("s1 after pushing 4th element:");
   s2.push("Good");
-  Stack<float>s3=new Stack<>(2);
+  Stack <Float>s3=new Stack<>(2);
   s3.push(100.0f);
   s3.push(200.0f);
   System.out.println("\n s3 after pushing 2 elements:\n"+s3);
